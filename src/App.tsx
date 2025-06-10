@@ -7,7 +7,8 @@ import { HeroSection } from '@/components/sections/HeroSection';
 // import { ContactSection } from '@/components/sections/ContactSection';
 // import BlogSection from '@/components/sections/BlogSection';
 import { ThemeProvider, useTheme } from '@/providers/theme-provider';
-import Squares from '@/components/ui/Squares';
+// import Squares from '@/components/ui/Squares';
+import TopographyBackground from '@/components/ui/TopographyBackground';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
 import speedInsights from '@vercel/speed-insights'; // Correct default import for Vite
@@ -92,12 +93,25 @@ function AppContent() {
   return (
     <div className="min-h-screen bg-background/50 text-foreground transition-colors duration-300 relative">
       {/* Render animated squares in the background */}
-      <Squares 
+      {/* <Squares 
         speed={0.2} 
         squareSize={40}
         direction='diagonal'
         borderColor={theme === 'dark' ? '#fff' : '#000'}
         hoverFillColor={theme === 'dark' ? '#222' : '#eee'}
+      /> */}
+
+      {/* Render animated TopographyBackground with theme support */}
+      <TopographyBackground
+        speed={0.25}
+        lineColor={theme === 'dark' ? '#fff' : '#222'}
+        opacity={theme === 'dark' ? 1.10 : 0.13}
+        lineWidth={5}
+        spacing={1}
+        curveAmplitude={10}
+        curveFrequency={0.012}
+        contourLevels={10}
+        zoom={0.2}
       />
       
       {/* Render the navigation bar */}
