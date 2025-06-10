@@ -10,7 +10,7 @@ import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
-import { inject } from '@vercel/speed-insights'; // ✅ Correct for Vite
+import speedInsights from '@vercel/speed-insights'; // Correct default import for Vite
 
 
 function AppContent() {
@@ -135,7 +135,7 @@ function AppContent() {
 function App() {
   // Inject Vercel Speed Insights once at the root level
   useEffect(() => {
-    inject();
+    speedInsights.injectSpeedInsights();
   }, []);
   // Wrap the application in a ThemeProvider to manage theme state
   return (
