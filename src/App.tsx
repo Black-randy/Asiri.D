@@ -10,6 +10,7 @@ import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 function AppContent() {
   // Access the current theme and a function to update it
@@ -126,6 +127,7 @@ function AppContent() {
       <div className="relative z-10">
         <Footer />
       </div>
+      <SpeedInsights />
     </div>
   );
 }
