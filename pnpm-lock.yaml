@@ -101,9 +101,6 @@ importers:
       '@vercel/node':
         specifier: ^5.2.1
         version: 5.2.1(rollup@4.42.0)
-      '@vercel/speed-insights':
-        specifier: ^1.2.0
-        version: 1.2.0(react@18.3.1)
       axios:
         specifier: ^1.9.0
         version: 1.9.0
@@ -1690,29 +1687,6 @@ packages:
 
   '@vercel/node@5.2.1':
     resolution: {integrity: sha512-0+YV01grkqfHIHhmWeCXWmgeP6GsuzXtgWBri3+qESwfAZ6dOTBG4GJp9z2E7sEi+wP60S0/eNGRj8z77uk3JQ==}
-
-  '@vercel/speed-insights@1.2.0':
-    resolution: {integrity: sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw==}
-    peerDependencies:
-      '@sveltejs/kit': ^1 || ^2
-      next: '>= 13'
-      react: ^18 || ^19 || ^19.0.0-rc
-      svelte: '>= 4'
-      vue: ^3
-      vue-router: ^4
-    peerDependenciesMeta:
-      '@sveltejs/kit':
-        optional: true
-      next:
-        optional: true
-      react:
-        optional: true
-      svelte:
-        optional: true
-      vue:
-        optional: true
-      vue-router:
-        optional: true
 
   '@vercel/static-config@3.1.1':
     resolution: {integrity: sha512-IRtKnm9N1Uqd2ayIbLPjRtdwcl1GTWvqF1PuEVNm9O43kmoI+m9VpGlW8oga+5LQq1LmJ2Y67zHr7NbjrH1rrw==}
@@ -5058,10 +5032,6 @@ snapshots:
       - encoding
       - rollup
       - supports-color
-
-  '@vercel/speed-insights@1.2.0(react@18.3.1)':
-    optionalDependencies:
-      react: 18.3.1
 
   '@vercel/static-config@3.1.1':
     dependencies:
