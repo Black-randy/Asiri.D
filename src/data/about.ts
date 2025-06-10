@@ -1,0 +1,3 @@
+export const aboutContent = {
+  introduction: `I am a full stack developer specializing in Java backend, familiar with core technologies such as Spring, MySQL, and Redis, capable of building high-performance and maintainable server-side architectures. Currently, I am delving into Go and applying it to real-world projects. I also possess strong frontend skills, able to build highly interactive web applications using modern frameworks like Vue, React, and Vite. I care about product experience and design details, striving to create products with both technical depth and user value.`
+};
