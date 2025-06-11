@@ -1,5 +1,5 @@
 export const heroContent = {
-  title: 'Λsiri',
+  title: 'Λsiri.D',
   subtitle: 'Full Stack Developer',
   description: `Passionate about crafting exceptional digital experiences, building scalable and user-friendly applications with modern web technologies.
 Experienced in full-stack development, committed to delivering excellent user experiences and high-performance technical solutions.`,
