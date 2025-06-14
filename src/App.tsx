@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/components/sections/HeroSection';
-// import { AboutSection } from '@/components/sections/AboutSection';
-// import { ProjectsSection } from '@/components/sections/ProjectsSection';
-// import { ContactSection } from '@/components/sections/ContactSection';
+import { AboutSection } from '@/components/sections/AboutSection';
+import { ProjectsSection } from '@/components/sections/ProjectsSection';
+import { ContactSection } from '@/components/sections/ContactSection';
 // import BlogSection from '@/components/sections/BlogSection';
 import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Squares';
@@ -109,22 +109,18 @@ function AppContent() {
         setActiveSection={setActiveSection}
       />
 
-      {/* Main content area */}
       <main ref={mainRef} className="container mx-auto px-4 pt-8 md:pt-24 pb-8 md:pb-4 space-y-16 md:space-y-24 relative z-10">
         <div className="relative min-h-[80vh] w-full">
-          {/* Hero section */}
           <HeroSection />
         </div>
-        {/* Uncomment the following sections as needed */}
-        {/* <AboutSection />
+        <AboutSection />
         <ProjectsSection />
-        <div id="blog">
+        {/* <div id="blog">
           <BlogSection />
-        </div>
-        <ContactSection /> */}
+        </div> */}
+        <ContactSection /> 
       </main>
 
-      {/* Footer */}
       <div className="relative z-10">
         <Footer />
       </div>
