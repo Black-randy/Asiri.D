@@ -1,4 +1,4 @@
-import { House } from 'lucide-react';
+import { House, Code2, Award, MessageSquare,} from 'lucide-react';
 // import { House, Code2, Award, MessageSquare, BookOpen } from 'lucide-react';
 
 export interface NavItem {
@@ -9,7 +9,7 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', icon: House },
-  // { id: 'about', label: 'About', icon: Code2 },
-  // { id: 'projects', label: 'Projects', icon: Award },
-  // { id: 'contact', label: 'Contact', icon: MessageSquare },
+  { id: 'about', label: 'About', icon: Code2 },
+  { id: 'projects', label: 'Projects', icon: Award },
+  { id: 'contact', label: 'Contact', icon: MessageSquare },
 ];
