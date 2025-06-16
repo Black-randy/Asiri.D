@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
+// import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { contactContent } from '@/data/contact';
 import { socialLinks } from '@/data/social';

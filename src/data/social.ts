@@ -1,4 +1,5 @@
-import { Github, Mail, Linkedin, Figma, Codepen } from 'lucide-react';
+import { Github, Mail, Linkedin } from 'lucide-react';
+// import { Github, Mail, Linkedin, Figma, Codepen } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 export interface SocialLink {
