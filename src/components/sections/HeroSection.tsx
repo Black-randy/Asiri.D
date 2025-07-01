@@ -66,6 +66,7 @@ export function HeroSection() {
                   <span className="relative z-10">View Projects</span>
                   <div className="absolute inset-0 bg-primary/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                 </Button>
+                
               </div>
             </div>
           </div>
