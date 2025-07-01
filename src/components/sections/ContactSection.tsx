@@ -7,6 +7,8 @@ import { socialLinks } from '@/data/social';
 import { MessageCircle } from 'lucide-react';
 import { WhatsappPopover } from '@/components/ui/WhatsApp-popover';
 import { logEvent, EventCategories, EventActions } from '@/lib/analytics';
+import GitHubButton from '@/components/demo/GitHubButton';
+
 
 interface SocialButtonProps {
   label: string;
@@ -42,6 +44,7 @@ const SocialButtons = () => (
         <MessageCircle className="h-5 w-5" />
       </Button>
     </WhatsappPopover>
+    {/* <GitHubButton /> */}
     {socialLinks.map((link) => (
       <SocialButton
         key={link.label}
