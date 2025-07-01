@@ -16,7 +16,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     icon: Linkedin,
-    href: 'https://www.linkedin.com/in/asiri-dhananjaya/',
+    href: 'https://www.linkedin.com/in/asiri-bandara/',
     label: 'LinkedIn',
   },
   {
