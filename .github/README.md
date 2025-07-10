@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://asirid.com/"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fasirid.com"></a>
+  <a href="https://asiri.is-a.dev/"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fasiri.is-a.dev"></a>
   <a href="https://github.com/black-randy/Asiri.D/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/black-randy/Asiri.D/ci.yml?branch=main&label=build"></a>
   <a href="https://github.com/black-randy/Asiri.D/blob/main/LICENSE.md"><img alt="License" src="https://img.shields.io/github/license/black-randy/Asiri.D?color=blue"></a>
   <a href="https://github.com/black-randy/Asiri.D/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/black-randy/Asiri.D?style=social"></a>
@@ -80,7 +80,7 @@ cd Asiri.D
 npm install
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+
 
 ---
 
@@ -108,5 +108,5 @@ MIT License – see [`LICENSE.md`](../LICENSE.md) for details.
 ---
 
 <p align="center">
-  <sub>Built and maintained by <a href="https://asirid.com">Asiri Dhananjaya</a></sub>
+  <sub>Built and maintained by <a href="https://asiri.is-a.dev">Asiri Dhananjaya</a></sub>
 </p>
