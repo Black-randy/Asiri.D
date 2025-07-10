@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "asiri.is-a.dev",
-  "Id": "e7adde8c-5f5a-4d80-9e97-dcd51aeb2118"
-}
