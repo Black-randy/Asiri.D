@@ -11,7 +11,7 @@ export const projects: Project[] = [
     title: "Restaurant Management System",
     description: "Manage restaurant inventory and suppliers.",
     tech: ['Laravel', 'PostgreSQL', 'MVC', 'Git', 'Agile'],
-    image: './banner-rms-v1.png',
+    image: './project-test-rms.png',
     link: '#',
   },
   {
