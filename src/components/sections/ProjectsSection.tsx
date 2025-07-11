@@ -4,8 +4,10 @@ import { projects } from '@/data/projects';
 import { Button } from '@/components/ui/button';
 import { logEvent, EventCategories, EventActions } from '@/lib/analytics';
 import { OptimizedImage } from '@/components/ui/optimized-image';
+import { useTheme } from '@/providers/theme-provider'; 
 
 export function ProjectsSection() {
+  const { theme } = useTheme(); 
   const handleProjectClick = (projectName: string, projectLink: string) => {
     logEvent(
       EventCategories.PROJECTS,
@@ -27,17 +29,17 @@ export function ProjectsSection() {
             onClick={() => handleProjectClick(project.title, project.link)}
           >
             <SpotlightCard className="group h-full w-full">
-              <div className="aspect-video relative overflow-hidden rounded-xl mb-4 bg-gradient-to-br from-background/50 to-background/80 shadow-lg ring-1 ring-border/20 hover:ring-primary/30 transition-all duration-300">
+                <div className="aspect-video relative overflow-hidden rounded-xl mb-4 bg-gradient-to-br from-background/50 to-background/80 shadow-lg ring-1 ring-border/20 hover:ring-primary/30 transition-all duration-300">
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity z-10" />
                 <OptimizedImage
-                  src={project.image}
+                  src={theme === 'dark' ? project.dark_image : project.light_image}
                   alt={project.title}
                   width={800}
                   height={450}
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                   priority={projects.indexOf(project) < 3}
                 />
-              </div>
+                </div>
               <div className="px-4 text-left">
                 <h3 className="text-xl font-semibold mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
                   {project.title}
