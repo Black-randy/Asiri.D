@@ -1,6 +1,6 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import sharp from 'sharp';
-import fetch from 'node-fetch'; // Ensure `node-fetch` is installed
+import fetch from 'node-fetch';
 import { Readable } from 'stream';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -24,28 +24,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const response = await fetch(url, { signal: controller.signal });
     clearTimeout(timeout);
 
-    if (!response.ok) {
+    if (!response.ok || !response.body) {
       return res.status(400).json({ error: 'Failed to fetch the image from the provided URL' });
     }
 
     // Stream the image data
-    const imageStream = Readable.from(response.body);
+    const imageStream = Readable.from(response.body as any);
 
     // Optimize the image using sharp
-    const optimizedImage = await sharp()
-      .resize(parsedWidth, null, {
-        fit: 'inside',
-        withoutEnlargement: true,
-      })
+    const transformer = sharp()
+      .resize({ width: parsedWidth, fit: 'inside', withoutEnlargement: true })
       .webp({ quality: 80 });
 
-    // Pipe the optimized image to the response
+    // Set headers before piping
     res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     res.setHeader('Content-Type', 'image/webp');
-    imageStream.pipe(optimizedImage).pipe(res);
-  } catch (error) {
+
+    // Pipe the optimized image to the response
+    imageStream.pipe(transformer).pipe(res);
+  } catch (error: any) {
     console.error('Image optimization error:', error);
-    const statusCode = error.name === 'AbortError' ? 408 : 500; // Handle timeout errors
+    const statusCode = error.name === 'AbortError' ? 408 : 500;
     res.status(statusCode).json({ error: 'Failed to optimize image' });
   }
 }
