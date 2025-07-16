@@ -11,7 +11,7 @@ import Squares from '@/components/ui/Squares';
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
 import speedInsights from '@vercel/speed-insights'; // Correct default import for Vite
-
+import { Analytics } from "@vercel/analytics/next"
 
 function AppContent() {
   // Access the current theme and a function to update it
@@ -136,6 +136,7 @@ function App() {
   // Wrap the application in a ThemeProvider to manage theme state
   return (
     <ThemeProvider>
+      <Analytics />
       <AppContent />
     </ThemeProvider>
   );
