@@ -39,18 +39,23 @@ export default function BlogSection() {
   const [error, setError] = useState<string | null>(null);
 
   const cleanMarkdown = (text: string) => {
-    return text
-      .replace(/<[^>]*>/g, '')
-      .replace(/#{1,6}\s/g, '')
-      .replace(/\*\*|\*|__|_/g, '')
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-      .replace(/!\[([^\]]*)\]\([^)]+\)/g, '')
-      .replace(/```[\s\S]*?```/g, '')
-      .replace(/`([^`]+)`/g, '$1')
-      .replace(/^[\s-]*[-*+]\s+/gm, '')
-      .replace(/^>\s+/gm, '')
-      .replace(/\n\s*\n/g, '\n')
-      .trim();
+    let previous;
+    do {
+      previous = text;
+      text = text
+        .replace(/<[^>]*>/g, '')
+        .replace(/#{1,6}\s/g, '')
+        .replace(/\*\*|\*|__|_/g, '')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/!\[([^\]]*)\]\([^)]+\)/g, '')
+        .replace(/```[\s\S]*?```/g, '')
+        .replace(/`([^`]+)`/g, '$1')
+        .replace(/^[\s-]*[-*+]\s+/gm, '')
+        .replace(/^>\s+/gm, '')
+        .replace(/\n\s*\n/g, '\n')
+        .trim();
+    } while (text !== previous);
+    return text;
   };
 
   const fetchPosts = async () => {
