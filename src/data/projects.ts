@@ -14,7 +14,7 @@ export const projects: Project[] = [
     tech: ['Laravel', 'PostgreSQL', 'MVC', 'Git', 'Agile'],
     light_image: './project-place-holder-v4 white.jpg',
     dark_image: './project-place-holder-v4 black.jpg',
-    link: '#',
+    link: 'https://rms.asirid.me/',
   },
   {
     title: "Parking Spot Detection AI",
