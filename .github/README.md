@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../public/logo/Logo-A-Dark-rec-round.png" alt="Asiri.D Logo" width="120" height="120" />
+  <img src="../public/logo/Logo-A-Dark-rec-round/android-chrome-512x512.png" alt="Asiri.D Logo" width="120" height="120" />
 </p>
 
 <h1 align="center">Asiri.D Portfolio</h1>
