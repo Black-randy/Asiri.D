@@ -7,7 +7,10 @@ import { ProjectsSection } from '@/components/sections/ProjectsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 // import BlogSection from '@/components/sections/BlogSection';
 import { ThemeProvider, useTheme } from '@/providers/theme-provider';
-import Squares from '@/components/ui/Squares';
+import Squares from '@/components/ui/Backgrounds/Squares/Squares'; 
+import DarkVeil from '@/components/ui/Backgrounds/DarkVeil/DarkVeil'; 
+
+
 import { navItems } from '@/data/navigation';
 import ReactGA from 'react-ga4';
 import speedInsights from '@vercel/speed-insights'; // Correct default import for Vite
@@ -93,15 +96,25 @@ function AppContent() {
   return (
     <div className="min-h-screen bg-background/50 text-foreground transition-colors duration-300 relative">
       <Analytics />
-      {/* Render animated squares in the background */}
+      {/* Render animated squares and dark veil in the background */}
+      <DarkVeil 
+        hueShift={0}
+        noiseIntensity={0.04}
+        scanlineIntensity={0}
+        speed={0.5}
+        scanlineFrequency={1}
+        warpAmount={5}
+        resolutionScale={1}
+      />
+
       <Squares 
-        speed={0.2} 
-        squareSize={40}
-        direction='diagonal'
+        speed={0.25} 
+        squareSize={48}
+        direction="diagonal"
         borderColor={theme === 'dark' ? '#fff' : '#000'}
         hoverFillColor={theme === 'dark' ? '#222' : '#eee'}
       />
-      
+
       {/* Render the navigation bar */}
       <Navbar 
         theme={theme} 
