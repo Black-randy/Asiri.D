@@ -15,7 +15,7 @@ export const friends: Friend[] = [
  {
     name: "Aaron Conlon",
     url: "https://i5lin.top/",
-    description: "A full stack developer passionate about delivering excellent results.",
+    description: "A Developer passionate about delivering excellent results.",
     avatar: "/friend2.png"
   },
   {

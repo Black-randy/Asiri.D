@@ -4,7 +4,7 @@
 
 <h1 align="center">Asiri.D Portfolio</h1>
 <p align="center">
-  <b>Full Stack Developer & AI Specialist</b><br>
+  <b>Developer & AI Specialist</b><br>
   Modern, responsive portfolio built with React, TypeScript, Vite, and Tailwind CSS.
 </p>
 
@@ -19,7 +19,7 @@
 
 ## 🚀 Overview
 
-A modern, responsive portfolio site for Asiri Dhananjaya, Full Stack Developer & AI Specialist.  
+A modern, responsive portfolio site for Asiri Dhananjaya, Developer & AI Specialist.  
 Showcases projects, skills, and contact info with a focus on performance, accessibility, and modern web standards.
 
 ---

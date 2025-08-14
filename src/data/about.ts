@@ -1,5 +1,5 @@
 export const aboutContent = {
-  introduction: `I'm a versatile Full Stack Developer and AI Solutions Specialist with an HND in Digital Technologies, focused on building intelligent systems that solve real-world problems. My technical journey combines professional software engineering experience with specialized AI training.`,
+  introduction: `I'm a versatile Developer and AI Solutions Specialist, focused on building intelligent systems that solve real-world problems. My technical journey combines professional software engineering experience with specialized AI training.`,
   
   expertise: [
     "Full Stack Development: Building end-to-end solutions with Laravel, PostgreSQL, and modern JavaScript frameworks",
