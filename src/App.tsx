@@ -97,7 +97,7 @@ function AppContent() {
     <div className="min-h-screen bg-background/50 text-foreground transition-colors duration-300 relative">
       <Analytics />
       {/* Render animated squares and dark veil in the background */}
-      <DarkVeil 
+      {/* <DarkVeil 
         hueShift={0}
         noiseIntensity={0.04}
         scanlineIntensity={0}
@@ -105,7 +105,7 @@ function AppContent() {
         scanlineFrequency={1}
         warpAmount={5}
         resolutionScale={1}
-      />
+      /> */}
 
       <Squares 
         speed={0.25} 
