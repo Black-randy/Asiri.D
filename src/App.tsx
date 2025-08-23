@@ -8,7 +8,7 @@ import { ContactSection } from '@/components/sections/ContactSection';
 // import BlogSection from '@/components/sections/BlogSection';
 import { ThemeProvider, useTheme } from '@/providers/theme-provider';
 import Squares from '@/components/ui/Backgrounds/Squares/Squares'; 
-import DarkVeil from '@/components/ui/Backgrounds/DarkVeil/DarkVeil'; 
+// import DarkVeil from '@/components/ui/Backgrounds/DarkVeil/DarkVeil'; 
 
 
 import { navItems } from '@/data/navigation';
